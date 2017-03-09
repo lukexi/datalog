@@ -20,7 +20,7 @@ extra-source-files: CHANGES.md
 library
   default-language: Haskell2010
   exposed-modules: Database.Datalog
-  other-modules:   Database.Datalog.Adornment
+                   Database.Datalog.Adornment
                    Database.Datalog.Database
                    Database.Datalog.Errors
                    Database.Datalog.Evaluate
@@ -32,10 +32,10 @@ library
                  containers,
                  unordered-containers,
                  hashable,
-                 exceptions >= 0.5 && < 0.9,
+                 exceptions,
                  text,
-                 transformers >= 0.3 && < 0.5,
-                 vector >= 0.9 && < 0.11
+                 transformers,
+                 vector
   hs-source-dirs: src
   ghc-options: -Wall -auto-all
 
